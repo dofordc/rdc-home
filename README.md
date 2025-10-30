@@ -1,16 +1,28 @@
-# my_home_app2
+# RDC Home - Automação Residencial Completa
 
-A new Flutter project.
+> **Controle total da sua casa com um toque.**
 
-## Getting Started
+## Funcionalidades
+- Controle de luzes (1 toque)
+- Edição de nomes (toque longo)
+- Sensores de temperatura e umidade
+- Modo noturno automático
+- Gráfico de histórico
+- Reconexão automática
 
-This project is a starting point for a Flutter application.
+## Arquitetura
+ESP8266/ESP32 → MQTT → Raspberry Pi → Flutter App
 
-A few resources to get you started if this is your first Flutter project:
+## Instalação
+1. Clone: `git clone https://github.com/dofordc/rdc-home.git`
+2. Configure Mosquitto no Raspberry Pi
+3. Carregue os firmwares nos ESPs
+4. `flutter run`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Documentação
+- [ESP Firmware](esp/)
+- [Flask Server](server/)
+- [Flutter App](app/)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Licença
+MIT - Use, modifique, venda!
